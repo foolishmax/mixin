@@ -9,20 +9,44 @@ export default defineConfig({
   logo: '/mixin/logo.svg',
   outputPath: 'docs-dist',
   mode: 'site',
+  navs: {
+    'zh-CN': [
+      null,
+      { title: 'GitHub', path: 'https://github.com/foolishmax/mixin' },
+    ],
+    'en-US': [
+      null,
+      { title: 'GitHub', path: 'https://github.com/foolishmax/mixin' },
+    ],
+  },
   menus: {
-    '/API': [
+    '/api': [
       {
-        title: 'General',
+        title: 'Array',
         children: [
-          'api/chunk.md',
+          'api/chunk/chunk.md',
+          'api/slice/slice.md',
+        ],
+      },
+      {
+        title: 'Lang',
+        children: [
+          'api/chunk/chunk.md',
         ],
       },
     ],
-    '/zh-CN/API': [
+    '/zh-CN/api': [
       {
-        title: '通用',
+        title: '数组',
         children: [
-          'api/chunk.md',
+          'api/chunk/chunk.zh-CN.md',
+          'api/slice/slice.zh-CN.md',
+        ],
+      },
+      {
+        title: '语言',
+        children: [
+          'api/chunk/chunk.zh-CN.md',
         ],
       },
     ],
