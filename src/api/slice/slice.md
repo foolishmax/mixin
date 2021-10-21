@@ -6,28 +6,29 @@ nav:
 ---
 
 ```
-  _.chunk(array, [size=1])
+  _.slice(array, [start = 0], [end = array.length])
 ```
 
-将数组（array）拆分成多个 size 长度的区块，并将这些区块组成一个新数组。 如果array 无法被分割成全部等长的区块，那么最后剩余的元素将组成一个区块。
+slice()方法返回一个新的数组对象，这一对象是一个由`begin`和`end`决定的原数组的浅拷贝（包括begin，不包括end）。原数组不会被改变。
 
 
 ## 参数
 
-  1. **array**(Array): 需要处理的数组
-  2. **[size = 1]**(number): 每个数组区块的长度
+  1. **array**(Array): 要裁剪的数组
+  2. [start = 0](number): 开始位置
+  3. [end = array.length](number): 结束位置
 
 ## 返回
-  (Array): 返回一个包含拆分区块的新书组（注：相当于一个二维数组）。
+  (Array): 返回裁剪部分得到的新数组。
 
 ## 例子
 
 ```js
-_.chunk(['a', 'b', 'c', 'd'], 2);
-// => [['a', 'b'], ['c', 'd']]
 
-_.chunk(['a', 'b', 'c', 'd'], 3);
-// => [['a', 'b', 'c'], ['d']]
+const array = [1, 2, 3, 4]
+
+_.slice(array, 2)
+// => [3, 4]
 
 ```
 

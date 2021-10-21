@@ -31,7 +31,11 @@ export default defineConfig({
       {
         title: 'Lang',
         children: [
-          'api/chunk/chunk.md',
+          'api/isSymbol/isSymbol.md',
+          'api/isObject/isObject.md',
+          'api/toFinite/toFinite.md',
+          'api/toInteger/toInteger.md',
+          'api/toNumber/toNumber.md',
         ],
       },
     ],
@@ -46,7 +50,11 @@ export default defineConfig({
       {
         title: '语言',
         children: [
-          'api/chunk/chunk.zh-CN.md',
+          'api/isSymbol/isSymbol.zh-CN.md',
+          'api/isObject/isObject.zh-CN.md',
+          'api/toFinite/toFinite.zh-CN.md',
+          'api/toInteger/toInteger.zh-CN.md',
+          'api/toNumber/toNumber.zh-CN.md',
         ],
       },
     ],
