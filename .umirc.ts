@@ -26,6 +26,8 @@ export default defineConfig({
         children: [
           'api/chunk/chunk.md',
           'api/slice/slice.md',
+          'api/pull/pull.md',
+          'api/compact/compact.md'
         ],
       },
       {
@@ -38,6 +40,12 @@ export default defineConfig({
           'api/toNumber/toNumber.md',
         ],
       },
+      {
+        title: '30-seconds-of-code',
+        children: [
+          'api/30-seconds-of-code/toSafeInteger/toSafeInteger.md',
+        ]
+      }
     ],
     '/zh-CN/api': [
       {
@@ -45,6 +53,8 @@ export default defineConfig({
         children: [
           'api/chunk/chunk.zh-CN.md',
           'api/slice/slice.zh-CN.md',
+          'api/pull/pull.zh-CN.md',
+          'api/compact/compact.zh-CN.md'
         ],
       },
       {
@@ -57,6 +67,12 @@ export default defineConfig({
           'api/toNumber/toNumber.zh-CN.md',
         ],
       },
+      {
+        title: '30-seconds-of-code',
+        children: [
+          'api/30-seconds-of-code/toSafeInteger/toSafeInteger.zh-CN.md',
+        ]
+      }
     ],
   },
 });
