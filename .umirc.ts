@@ -43,7 +43,7 @@ export default defineConfig({
       {
         title: '30-seconds-of-code',
         children: [
-          'api/30-seconds-of-code/toSafeInteger/toSafeInteger.md',
+          'api/30-seconds-of-code/toSafeInteger.md',
         ]
       }
     ],
@@ -70,7 +70,7 @@ export default defineConfig({
       {
         title: '30-seconds-of-code',
         children: [
-          'api/30-seconds-of-code/toSafeInteger/toSafeInteger.zh-CN.md',
+          'api/30-seconds-of-code/toSafeInteger.zh-CN.md',
         ]
       }
     ],
